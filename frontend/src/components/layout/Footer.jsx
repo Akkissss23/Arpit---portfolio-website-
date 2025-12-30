@@ -114,9 +114,6 @@ const Footer = () => {
           <p className="text-[#717171] text-sm">
             © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
           </p>
-          <p className="text-[#717171] text-sm flex items-center gap-1">
-            Built with <Heart size={14} className="text-[#ff84e4]" fill="#ff84e4" /> using React & TailwindCSS
-          </p>
         </div>
       </div>
     </footer>

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { personalInfo } from '../../data/mock';
+import { sendContactEmail } from "../services/emailService";
+
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Loader2, CheckCircle, ArrowRight } from 'lucide-react';
 
 const Contact = () => {
