@@ -9,12 +9,18 @@ const SERVICE_ID = "service_b4r55uk";
 const CONTACT_TEMPLATE_ID = "template_vq9lomd";
 
 // Template that sends auto-reply TO VISITOR
-const AUTOREPLY_TEMPLATE_ID = "template_k27yhan"; // 🔁 replace with real ID
+const AUTOREPLY_TEMPLATE_ID = "template_k27yhan";
 
+// Public Key
 const PUBLIC_KEY = "VI9_-Nadg_VGuDlDU";
 
 // =======================
-// Main function used by Contact.jsx
+// Initialize EmailJS (REQUIRED)
+// =======================
+emailjs.init(PUBLIC_KEY);
+
+// =======================
+// Function used by Contact.jsx
 // =======================
 export const sendContactEmail = async (formData) => {
   const templateParams = {
@@ -27,15 +33,13 @@ export const sendContactEmail = async (formData) => {
   await emailjs.send(
     SERVICE_ID,
     CONTACT_TEMPLATE_ID,
-    templateParams,
-    PUBLIC_KEY
+    templateParams
   );
 
   // 2️⃣ Send auto-reply to VISITOR
   await emailjs.send(
     SERVICE_ID,
     AUTOREPLY_TEMPLATE_ID,
-    templateParams,
-    PUBLIC_KEY
+    templateParams
   );
 };
