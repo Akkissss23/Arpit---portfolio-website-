@@ -111,8 +111,8 @@ const Navbar = () => {
                 <Linkedin size={20} />
               </a>
               <motion.a
-                href="/Arpit Resume 7.pdf"
-                download="Arpit Resume 7.pdf"
+                href="/Resume.pdf"
+                download="Resume.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center gap-2 px-5 py-2.5 bg-white text-[#151515] rounded-full text-sm font-mono uppercase tracking-wider hover:bg-[#ffd1e7] transition-colors"
