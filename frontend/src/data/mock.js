@@ -129,7 +129,7 @@ export const experience = [
     type: "internship",
     title: "Summer Intern - ML Research",
     organization: "NIT Patna",
-    period: "2024",
+    period: "2025",
     description: "Designed and worked on an E-Tongue system integrating hardware (sensors, circuitry) and software for data acquisition and analysis. Applied ML/DL techniques for pattern recognition and classification of sensor responses.",
     skills: ["Python", "Machine Learning", "Deep Learning", "EagleCAD", "MATLAB"]
   }
